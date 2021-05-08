@@ -44,7 +44,9 @@ class MyApp extends StatelessWidget {
 class ButtonPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return RaisedButton(
+    return ElevatedButton(
+      autofocus: false,
+      child: const Text('State'),
       onPressed: () {
         state = DynamicTheme.of(context);
       },
